@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#q{
+    width: 100%;
+    height: 100%;
+}
+.qq{
+    width: 90%;
+    height: 800px;
+    margin: 5% auto;
+    position: relative;
+}
+.denglukuang{
+    width: 32%;
+    height: 430px;
+    margin: 0 0 0 62%;
+    display: block;
+}
+.dibudaohang{
+    width:100% ;
+    height: 295px;
+    background-color: #b52221;
+    margin: 7% 0 0 0;
+}
+img{
+    width: 56%;
+    height: 50%;
+    float: left;
+    margin: 0 0 0 3%;
+}
+form{
+    margin: auto;
+}
+input{
+    width: 90%;
+    height: 25px;
+    border: 1px solid #ccc;
+    padding: 6px 0;
+    border-radius: 19px;
+    padding-left:20px;
+    margin:0 0 10px 2%;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+.anniu{
+    width: 80%;
+    height: 50px;
+    margin: 0 0 0 10%;
+    padding:0 0 0 0;
+}
+.qitazhaohaodenglu{
+    width: 80%;
+    height: 75px;
+    background-color: #9eeeff;
+    margin: 7% 0 0 10%;
+}
+a {font-size:16px}
+a:link {color: #ffffff; text-decoration:none;}
+a:active {color: red; }
+a:visited {color:purple;text-decoration:none;}
+a:hover {color:#ffffff; text-decoration:underline;}
