@@ -58,6 +58,9 @@ input:focus{
     height: 50px;
     margin: 0 0 0 10%;
     padding:0 0 0 0;
+    background: #20ff08;
+    color: #ffffff;
+    font-size: 20px;
 }
 .qitazhaohaodenglu{
     width: 80%;

@@ -4,7 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"
           name="viewport">
-    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style">
     <link rel="stylesheet" href="css/autoplay.css" type="text/css"/>
     <link rel="stylesheet" href="css/Demo.css" type="text/css"/>
     <script type="text/javascript" src="js/autoplay.js"></script>
@@ -24,7 +25,7 @@
                      style="margin-bottom:-4px"/>
                 <a href="#">帮助中心</a>
                 <a href="#">我的账户</a>
-                <a href="#">登录/<a href="#">注册</a></a>
+                <a href="Demo1.html">登录/<a href="#">注册</a></a>
             </td>
         </tr>
     </table>
@@ -34,13 +35,9 @@
     <form action="#" id="searchfrom">
         <table width="100%" border="0" cellpadding="0">
             <tr>
-                <td style="text-align:right; padding-right:220px">
-                    <input type="text" name="textfield" class="inputtable" id="textfield" value="搜索你感兴趣的"
-                           onmouseover="this.focus();"
-                           onClick="my_click(this,'textfield');"
-                           onBlur="my_blur(this,'textfield');"/>
-                    <a hrey="#">
-                        <img src="images/serchbutton.gif" border="0" style="margin-botton:-4px" onClick="search()"/>
+                <td style="text-align:right; padding-right:50px;background: #403cff;height: 40px">
+                    <input type="text" name="textfield" class="inputtable" id="textfield" placeholder="搜索你感兴趣的"/>
+                    <input type="button" name="btn1" value="搜索" style="width: 50px;height: 25px;font-size: 16px;background: #F3F2DE;text-align: center;color: #0a050d">
                     </a>
                 </td>
             </tr>
@@ -61,94 +58,72 @@
 <div class="qukuai">
     <div class="geshi">
         <a name="a"></a>
-        <div class="item" style="background-color: #5d56fd">直播</div>
-        <div class="item1">列表新闻</div>
+        <div class="item" style="background-color: #5d56fd">直播
+        </div>
+        <div class="item1">列表新闻
+        </div>
     </div>
+    <br />
     <div class="geshi">
         <a name="b"></a>
         <div class="item" style="background-color: #20ff08">动画</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="c"></a>
         <div class="item" style="background-color: #e6c8ff">番剧</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="d"></a>
         <div class="item">国创</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="e"></a>
         <div class="item">音乐</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="f"></a>
         <div class="item">音频</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="g"></a>
         <div class="item">舞蹈</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="h"></a>
         <div class="item">游戏</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="i"></a>
         <div class="item">科技</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="j"></a>
         <div class="item">生活</div>
         <div class="item1">列表新闻</div>
     </div>
+    <br />
     <div class="geshi">
         <a name="k"></a>
         <div class="item">鬼畜</div>
         <div class="item1">列表新闻</div>
     </div>
-    <div class="geshi">
-        <a name="l"></a>
-        <div class="item">时尚</div>
-        <div class="item1">列表新闻</div>
-    </div>
-    <div class="geshi">
-        <a name="m"></a>
-        <div class="item">广告</div>
-        <div class="item1">列表新闻</div>
-    </div>
-    <div class="geshi">
-        <a name="n"></a>
-        <div class="item">娱乐</div>
-        <div class="item1">列表新闻</div>
-    </div>
-    <div class="geshi">
-        <a name="o"></a>
-        <div class="item">电影</div>
-        <div class="item1">列表新闻</div>
-    </div>
-    <div class="geshi">
-        <a name="p"></a>
-        <div class="item">TV剧</div>
-        <div class="item1">列表新闻</div>
-    </div>
-    <div class="geshi">
-        <a name="q"></a>
-        <div class="item">影视</div>
-        <div class="item1">列表新闻</div>
-    </div>
-    <div class="geshi">
-        <a name="r"></a>
-        <div class="item">纪录片</div>
-        <div class="item1">列表新闻</div>
-    </div>
+    <br />
 </div>
 <div class="daohang">
     <a href="#a"><div class="name">直播</div></a>
@@ -172,20 +147,6 @@
     <a href="#j"><div class="name">生活</div></a>
 
     <a href="#k"><div class="name">鬼畜</div></a>
-
-    <a href="#l"><div class="name">时尚</div></a>
-
-    <a href="#m"><div class="name">广告</div></a>
-
-    <a href="#n"><div class="name">娱乐</div></a>
-
-    <a href="#o"><div class="name">电影</div></a>
-
-    <a href="#p"><div class="name">TV剧</div></a>
-
-    <a href="#q"><div class="name">影视</div></a>
-
-    <a href="#r"><div class="name">纪录片</div></a>
 
     <a href="#s"><div class="name">置顶</div></a>
 </div>

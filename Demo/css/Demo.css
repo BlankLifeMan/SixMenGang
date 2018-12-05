@@ -2,42 +2,86 @@
     margin:0;
     padding:0;
 }
+/*.item{*/
+    /*width:75%;*/
+    /*height:500px;*/
+    /*border-width: 2px;*/
+    /*border-color: #000;*/
+    /*border-style: solid;*/
+    /*float:left;*/
+/*}*/
+.main {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+    background: rgba(161, 161, 161, 0.41);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: #000000; /*#666666*/
+    text-align: center;
+    vertical-align: top;
+}
+
+
+
+.headtable {
+    width: 100%;
+}
+.headtable td {
+    padding: 10px 50px 25px 135px;
+}
 .item{
-    width:75%;
-    height:500px;
+    _width:5%;
+    _height:50px;
     border-width: 2px;
     border-color: #000;
     border-style: solid;
     float:left;
 }
+/*.item1{*/
+    /*width: 24%;*/
+    /*height: 500px;*/
+    /*border-width: 2px;*/
+    /*border-color: #403cff;*/
+    /*border-style: solid;*/
+    /*float:left;*/
+/*}*/
 .item1{
-    width: 24%;
-    height: 500px;
+    _width: 4%;
+    _height: 50px;
     border-width: 2px;
     border-color: #403cff;
     border-style: solid;
     float:left;
 }
+/*.qukuai{*/
+    /*position:absolute;*/
+    /*width: 77%;*/
+    /*left: 10%;*/
+/*}*/
 .qukuai{
     position:absolute;
-    width: 77%;
+   float: left;
+    _width: 77%;
     left: 10%;
+
 }
+
 .name{
-    width:50px;
-    height:37px;
+    width:80px;
+    height:55px;
     background-color: #F6F9FA;
     text-align: center;
-    border-radius:5px;
-    font:14px/40px Arial;
+    border-radius:10px;
+    font:17px/60px Arial;
 }
 .name:hover{
     background-color: #00A1D6;
 }
 .daohang{
     position:fixed;
-    top: 10px;
-    left: 88%;
+    top: 147px;
+    left: 90%;
 }
 .geshi{
     width: 100%;
