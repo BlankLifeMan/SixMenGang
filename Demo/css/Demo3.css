@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #d3ff8c;
+}
+
+.a {
+    width: 100%;
+    height: 80px;
+    background: #0FB28A;
+}
+
+.b {
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+}
+
+.c {
+    width: 100%;
+    height: 45px;
+    margin: 20px auto 0 auto;
+    background: #5d56fd;
+    border-width: 1px;
+    position: absolute;
+    top: 120px;
+}
+
+.d {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 185px;
+    background: #20ff08;
+}
+table{
+    width: 80%;
+    height: 400px;
+    margin:30px auto ;
+    background: #9eeeff;
+}
+input{
+    width: 350px;
+    height: 35px;
+}
+
+.f{
+    width: 80px;
+    height: 40px;
+}
+/* CSS样式制作 */
+*{
+    padding:0px;
+    margin:0px;
+}
+#tab{
+    _width:430px;
+    padding:5px;
+    _height:150px;
+    margin:20px;
+
+}
+#tab ul{
+    list-style:none;
+    height:30px;
+    line-height:30px;
+    border-bottom:2px #C88 solid;
+}
+#tab ul li{
+    background:#FFF;
+    cursor:pointer;
+    float:left;
+    list-style:none;
+    height:29px;
+    line-height:29px;
+    padding:0px 10px;
+    margin:0px 10px;
+    border:1px solid #BBB;
+    border-bottom:2px solid #C88;
+}
+#tab ul li.on{
+    border-top:2px solid Saddlebrown;
+    border-bottom:2px solid #FFF;
+}
+#tab div{
+    _height:100px;
+    _width:250px;
+    line-height:24px;
+    border-top:none;
+    padding:1px;
+    border:1px solid #336699;
+    padding:10px;
+}
+.hide{
+    display:none;
+}
