@@ -19,6 +19,7 @@
     top: 0;
     left: 5%;
     right: 5%;
+
 }
 
 .c {
@@ -56,7 +57,7 @@ input{
 .e{
     background-size: 100%;
     background:url("../ad/red.jpg");
-    background-position:center;
+    background-position: 90%-10px ;
 }
 
 /* CSS样式制作 */
@@ -125,4 +126,10 @@ a:active{
     color: darkgoldenrod;
 
 }
+.g{
+    background: #CC8888;
+    height:80px ;
+    width: 100%;
+}
+
 
