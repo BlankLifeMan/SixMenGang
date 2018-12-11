@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页功能</title>
+
+    <!--<a class="goPay" onclick="family.attended()" lang="fenye.js">-->
+    <!--<span>申请</span>-->
+    <!--</a>-->
+
+    <!--var fenye={-->
+    <!--attended:function()-->
+    <!--{-->
+    <!--alert("111111111");-->
+    <!--}-->
+    <!--}-->
+
+
+    <style>
+        .dv-big-page {
+            clear: both;
+            width: 960px;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dv-page-position-box {
+            width: 320px;
+            height: 30px;
+            margin: auto;
+        }
+
+        .dv-margin-left {
+            float: left;
+            width: 210px;
+            height: 30px;
+        }
+
+        .dv-page-box {
+            float: left;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 750px;
+            height: 30px;
+        }
+
+        .li_prew {
+            width: 38px;
+            height: 28px;
+            border: solid 1px #e3e3e3;
+            text-align: center;
+            list-style: none;
+            cursor: pointer;
+            float: left;
+            font-size: 18px;
+            color: #858585;
+            line-height: 28px;
+        }
+
+        .li_btn {
+            width: 38px;
+            height: 28px;
+            border: solid 1px #e3e3e3;
+            text-align: center;
+            list-style: none;
+            cursor: pointer;
+            float: left;
+            line-height: 28px;
+            font-size: 18px;
+            color: #858585;
+        }
+
+        .li_btn:hover {
+            cursor: pointer;
+            line-height: 28px;
+            font-size: 18px;
+            background-color: #00bcd4;
+            color: #fff;
+        }
+
+        .li_next {
+            width: 38px;
+            height: 28px;
+            border: solid 1px #e3e3e3;
+            text-align: center;
+            list-style: none;
+            cursor: pointer;
+            float: left;
+            line-height: 28px;
+            font-size: 18px;
+            color: #858585;
+        }
+
+        .dv_btns_box {
+            width: 280px;
+        }
+
+        .li_next:hover,
+        .li_prew:hover {
+            cursor: pointer;
+            line-height: 28px;
+            font-size: 18px;
+            background-color: #00bcd4;
+            color: #fff;
+        }
+
+        #div_li_btn_mid {
+            width: 240px;
+            height: 30px;
+            float: left;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<div class="dv-big-page">
+    <div class="dv-margin-left"></div>
+    <div class="dv-page-box">
+        <div class="dv-page-position-box">
+            <li class="li_prew"><<</li>
+            <div id="div_li_btn_mid">
+                <div class="dv_btns_box">
+                    <li class="li_btn">1</li>
+                    <li class="li_btn">2</li>
+                    <li class="li_btn">3</li>
+                    <li class="li_btn">4</li>
+                    <li class="li_btn">5</li>
+                    <li class="li_btn">6</li>
+                    <li class="li_btn">7</li>
+                </div>
+            </div>
+            <li class="li_next">>></li>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
