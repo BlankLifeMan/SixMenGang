@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/Demo3.css" type="text/css">
     <title> 选项卡</title>
+
     <script type="text/javascript">
         // JS实现选项卡切换
         window.onload = function(){
@@ -27,93 +28,97 @@
     </script>
 
 </head>
-<body>
-<div class="a">
+    <body class="e">
+<div class="">
 
 </div>
 <div class="b">
-    <img src="../ad/c1.jpg" style="width:110px ;height: 80px" class="e">
+    <img src="../images/love.png" style="width:110px ;height: 80px" class="e"/>
 
     <!-- HTML页面布局 -->
+
     <div id = "tab">
         <ul>
-            <li class="on">基本信息</li>
-            <li class="off">工作经历</li>
-            <li class="off">教育经历</li>
-            <li class="off">修改头像</li>
-            <li class="off">情感经历</li>
+            <a href="a:link">
+                <a href="##">  <li class="on" style="border-radius:9px;">基本信息</li></a>
+                <a href="##">  <li class="off" style="border-radius:9px;">工作经历</li></a>
+                <a href="##">  <li class="off" style="border-radius:9px;">教育经历</li></a>
+                <a href="##">  <li class="off" style="border-radius:9px;">修改头像</li></a>
+                <a href="##">  <li class="off" style="border-radius:9px;">情感经历</li></a>
+            </a>
+
         </ul>
-        <div class="show">
+        <div class="table">
             <form action="##" method="post" name="Information_modification">
                 <table>
                     <tr>
                         <td align="right"> 姓名:</td>
                         <td align="left">
-                            <input type="text" name="name">
+                            <input type="text" name="name" style="border-radius:9px;">
                         </td>
                         <td align="right"> 个人网站:</td>
                         <td align="left" >
-                            <input type="text" name="Student_ID">
+                            <input type="text" name="Student_ID" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right"> 证件类型:</td>
                         <td align="left">
-                            <input type="text" name="Document_type">
+                            <input type="text" name="Document_type" style="border-radius:9px;">
                         </td>
                         <td align="right"> 证件号:</td>
-                        <td align="left"  >
+                        <td align="left"   >
 
-                            <input type="text" name="ID_number">
+                            <input type="text" name="ID_number" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right">性别:</td>
                         <td align="left">
-                            <select name="sex" style="width: 350px;height:35px ">
+                            <select name="sex" style="border-radius:9px; width: 350px;height:35px " >
                                 <option value="男">男</option>
                                 <option value="女">女</option>
                             </select>
                         </td>
                         <td align="right">手机号:</td>
                         <td align="left"  >
-                            <input type="text" name="Cell_phone_number">
+                            <input type="text" name="Cell_phone_number" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right">出生日期:</td>
                         <td align="left">
-                            <input type="text" name="Date_of_birth">
+                            <input type="text" name="Date_of_birth" style="border-radius:9px;">
                         </td>
                         <td align="right" >
                             &nbsp;
                         </td>
                         <td>
-                            <input type="text" name="Verification_Code" style="width:80px;" >
+                            <input type="text" name="Verification_Code" style="width:80px; border-radius:9px;" >
                             <a href="##">获取验证码</a>
                         </td>
                     </tr>
                     <tr>
                         <td align="right">  Q&nbsp;Q</td>
                         <td align="left">
-                            <input type="text" name="QQ">
+                            <input type="text" name="QQ" style="border-radius:9px;">
                         </td>
                         <td align="right">邮箱:</td>
                         <td align="left"  >
-                            <input type="email" name="mailbox">
+                            <input type="email" name="mailbox" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right"><spen >个人简介:</spen></td>
                         <td colspan="4">
-                        <textarea name="Personal_profile" cols="115" rows="4" >
+                        <textarea name="Personal_profile" cols="115" rows="4"  style="border-radius:9px;">
 
                         </textarea>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="4" align="center">
-                            <input type="submit" value="保存" name="Preservation">
+                            <input type="submit" value="保存" name="Preservation" style="border-radius:9px;">
                         </td>
                     </tr>
                 </table>
@@ -125,28 +130,28 @@
                     <tr>
                         <td align="right"> 公司名称:</td>
                         <td align="left">
-                            <input type="text" name="name">
+                            <input type="text" name="name" style="border-radius:9px;">
                         </td>
                         <td align="right"> 职位头衔:</td>
                         <td align="left" >
-                            <input type="text" name="Student_ID">
+                            <input type="text" name="Student_ID" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right"> 工作城市:</td>
                         <td align="left">
-                            <input type="text" name="Document_type">
+                            <input type="text" name="Document_type" style="border-radius:9px;">
                         </td>
                         <td align="right"> 工作时间:</td>
                         <td align="left"  >
 
-                            <input type="text" name="ID_number">
+                            <input type="text" name="ID_number" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right"><spen >相关技术:</spen></td>
                         <td colspan="4">
-                        <textarea name="Personal_profile" cols="115" rows="4" >
+                        <textarea name="Personal_profile" cols="115" rows="4"  style="border-radius:9px;">
 
                         </textarea>
                         </td>
@@ -154,14 +159,14 @@
                     <tr>
                         <td align="right"><spen >职位描述:</spen></td>
                         <td colspan="4">
-                        <textarea name="Personal_profile" cols="115" rows="4" >
+                        <textarea name="Personal_profile" cols="115" rows="4"  style="border-radius:9px;">
 
                         </textarea>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="4" align="center">
-                            <input type="submit" value="保存" name="Preservation">
+                            <input type="submit" value="保存" name="Preservation" style="border-radius:9px;">
                         </td>
                     </tr>
                 </table>
@@ -173,28 +178,28 @@
                     <tr>
                         <td align="right"> 学院名称:</td>
                         <td align="left">
-                            <input type="text" name="name">
+                            <input type="text" name="name" style="border-radius:9px;">
                         </td>
                         <td align="right"> 所学专业:</td>
                         <td align="left" >
-                            <input type="text" name="Student_ID">
+                            <input type="text" name="Student_ID" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right"> 入学时间:</td>
                         <td align="left">
-                            <input type="text" name="Document_type">
+                            <input type="text" name="Document_type" style="border-radius:9px;">
                         </td>
                         <td align="right"> 学历:</td>
                         <td align="left"  >
 
-                            <input type="text" name="ID_number">
+                            <input type="text" name="ID_number" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
                         <td align="right"><spen >相关技术:</spen></td>
                         <td colspan="4">
-                        <textarea name="Personal_profile" cols="115" rows="4" >
+                        <textarea name="Personal_profile" cols="115" rows="4"  style="border-radius:9px;">
 
                         </textarea>
                         </td>
@@ -202,23 +207,44 @@
                     <tr>
                         <td align="right"><spen >取得成就:</spen></td>
                         <td colspan="4">
-                        <textarea name="Personal_profile" cols="115" rows="4" >
+                        <textarea name="Personal_profile" cols="115" rows="4" style="border-radius:9px;" >
 
                         </textarea>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="4" align="center">
-                            <input type="submit" value="保存" name="Preservation">
+                            <input type="submit" value="保存" name="Preservation" style="border-radius:9px;">
                         </td>
                     </tr>
                 </table>
             </form>
         </div>
-        <div class="hide">
 
+
+        <div class="hide">
+            <form action="##" method="post" name="Information_modification">
+                    <center style="margin: 82px 0 83px 0">
+                        <img src="../images/11.png" />
+                        <br>
+                        <br>
+                        <input type="submit" value="在本地选择图片" name="Preservation" style="border-radius:9px;">
+                        <input type="submit" value="保存" name="Preservation" style="border-radius:9px;">
+                    </center>
+            </form>
         </div>
         <div class = "hide">
+            <form action="##" method="post" name="Information_modification">
+                <table>
+                    <td align="right"><spen >情感经历:</spen></td>
+                    <td colspan="4">
+                        <textarea name="Personal_profile" cols="115" rows="4" style="border-radius:9px; height: 300px" >
+
+                        </textarea>
+                    </td>
+                    </tr>
+                </table>
+            </form>
 
         </div>
     </div>
