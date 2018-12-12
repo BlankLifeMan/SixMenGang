@@ -1,0 +1,9 @@
+Close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    background: url(../images/multiply.png) 0 0 no-repeat;
+}
