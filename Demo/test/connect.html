@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <link rel="stylesheet" type="text/css"   href="../css/layui.css"></link>
+    <script src="../layui.js" charset="utf-8"></script>
+
+    <style type="text/css">
+
+        .div1{ border:2px solid #BBBBBB;
+            width: 420px;
+            text-align:center;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            background: #FFFFFF ;
+            opacity:0.95;
+            filter:alpha(opacity=40);
+            border-radius:30px;;
+        }
+        .div2{ border:2px solid #BBBBBB;
+            width: 420px;
+            text-align:center;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            background: #FFFFFF ;
+            opacity:0.95;
+            filter:alpha(opacity=40);
+            border-radius:30px;
+        }
+    </style>
+</head>
+
+
+
+<body  background="../images/0141a15bfe365aa801209252780285.png@1280w_1l_2o_100sh.png">
+
+<div class="div1" id="di1" >
+    <br>
+    <p><img src="../images/11.png" height="50" width="50"/> 相约</p>
+    <div class="colse"></div>
+
+    <p>----------使用手机号或邮箱登录----------</p>
+    <div class="item">
+        <label>手机号码： </label>
+        <input type="text" placeholder="请填入手机号">
+        <div class="item">
+            <label>登录密码： </label>
+            <input type="password" placeholder="请输入6-18位，区分大小写，数字、字母及特殊符号中的两种或两种以上">
+            <br>
+            <br>
+            <!--<a href="Disanfang.html" onclick="disanfang()">使用第三方注册</a> <br/>-->
+                <input type="button" value="使用第三方注册" onclick="disanfang()">
+            <br>
+        </div>
+
+    </div>
+</div>
+
+<div class="div2"  id="di2" >
+    <div class="Zi">
+        <br>
+        <b><img src="../images/11.png" height="50" width="50"/> 相约</b>
+    </div>
+    <p>----------使用第三方软件注册----------</p>
+    <img src="../images/01d5265944e531a8012193a3479c3c.jpg"height="50" width="50"/>
+    <img src="../images/12099365_112411676125_2.png"height="50" width="50"/>
+    <img src="../images/01d79b554423810000019ae9cda83f.jpg@2o.jpg"height="50" width="50"/>
+    <img src="../images/20150330141727a5639.jpg" height="50" width="50"/>
+    <br>
+    <br>
+    <input type="button" value="使用手机号注册" onclick="shouji()">
+</div>
+</body>
+
+<script type="text/javascript">
+    var d1=document.getElementById('di1');
+    var d2=document.getElementById('di2');
+    if (d1.className="div1"){
+        d2.style.display="none";
+    } else {
+        d2.style.display="block";
+    }
+    function disanfang() {
+        d1.style.display="none";
+        d2.style.display="block";
+    }
+    function shouji() {
+        d2.style.display="none";
+        d1.style.display="block";
+    }
+</script>
+</html>

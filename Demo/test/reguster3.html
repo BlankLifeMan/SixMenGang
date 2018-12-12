@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns: xmlns:>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css"   href="../css/layui.css"></link>
+    <script src="../layui.js" charset="utf-8"></script>
+
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="layui-row" style="border: solid 1px red;height: 100%;width: 100%">
+
+    <div class="layui-col-lg4" style="height: 100%" ></div>
+
+
+    <div class="layui-col-lg5" style="height: 100%;">
+          <p align="center" style="margin-top: 40px;font-size: 25px" >注册</p>
+
+        <form class="layui-form" action="" style="margin-top: 40px;" lay-filter="example">
+            <div class="layui-form-item">
+                <label class="layui-form-label">呢称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="username" required  lay-verify="username" placeholder="请输入标题" autocomplete="off" class="layui-input" style="width: 307px;">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">性别</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="sex" value="男" title="男">
+                    <input type="radio" name="sex" value="女" title="女" checked>
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">手机号码</label>
+                <div class="layui-input-block">
+                    <input type="text" name="phone" required  lay-verify="phone" placeholder="请输入标题" autocomplete="off" class="layui-input" style="width: 307px;">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" required lay-verify="pass" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">确认密码</label>
+                <div class="layui-input-inline">
+                    <input   type="password" name="password1" required lay-verify="pass1" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">邮箱</label>
+                <div class="layui-input-block">
+                    <input type="text" name="email" required  lay-verify="email" placeholder="请输入标题" autocomplete="off" class="layui-input" style="width: 307px">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div class="layui-col-lg3" style="height: 100%" >
+
+    </div>
+</div>
+
+</body>
+<script>
+    layui.use(['form', 'layedit'], function(){
+        var form = layui.form;
+        var layer = layui.layer;
+        var layedit = layui.layedit;
+        var laydate = layui.laydate;
+        //自定义验证规则
+        form.verify({
+            username: function(value){
+                if(value.length < 5){
+                    return '标题至少得5个字符啊';
+                }
+            }
+            ,pass: [/(.+){6,12}$/, '密码必须6到12位']
+            ,pass1:[/(.+){6,12}$/, '密码必须6到12位']
+            ,content: function(value){
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+             var data1 = JSON.stringify(data.field)
+            console.log(data1)
+              console.log(data.field.password)
+              console.log(data.field.password1)
+              if(data.field.password == data.field.password1){
+
+                  layer.alert("密码和账户正确")
+
+              }else {
+                  layer.msg('两次账号和密码不一样');
+              }
+
+            // alert(data)
+            // console.log("123123")
+            // console.log(data.field)
+            // layer.alert(JSON.stringify(data.field), {
+            //     title: '最终的提交信息'
+            // })
+            return false;
+        });
+        //表单初始赋值
+        // form.val('example', {
+        //     "username": "贤心123" // "name": "value"
+        //     ,"phone":"15189132787"
+        //     ,"password": "123456"
+        //     ,"email":"2648030511@qq.com"
+        // })
+    });
+</script>
+</html>
