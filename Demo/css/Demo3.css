@@ -59,6 +59,11 @@ input{
     background:url("../ad/red.jpg");
     background-position: 90%-10px ;
 }
+.h{
+    background-size: 100%;
+    background:url("../ad/60-130220143A3.jpg");
+    background-position: -220%-10px;
+}
 
 /* CSS样式制作 */
 *{
