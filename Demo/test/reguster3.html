@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css"   href="../css/layui.css"></link>
+    <link rel="stylesheet" type="text/css"   href="../css/layui.css">
     <script src="../layui.js" charset="utf-8"></script>
 
     <style>
@@ -22,10 +22,9 @@
     <div class="layui-col-lg4" style="height: 100%" ></div>
 
 
-    <div class="layui-col-lg5" style="height: 100%;">
+    <div class="layui-col-lg5" style="height: 100%;width: 400px">
           <p align="center" style="margin-top: 40px;font-size: 25px" >注册</p>
-
-        <form class="layui-form" action="" style="margin-top: 30px;" lay-filter="example">
+        <form class="layui-form" action="#" style="margin-top: 30px;" lay-filter="example">
             <div class="layui-form-item">
                 <label class="layui-form-label">呢称</label>
                 <div class="layui-input-block">
@@ -124,9 +123,7 @@
               console.log(data.field.password)
               console.log(data.field.password1)
               if(data.field.password == data.field.password1){
-
                   layer.alert("密码和账户正确")
-
               }else {
                   layer.msg('两次账号和密码不一样');
               }
