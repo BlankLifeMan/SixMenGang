@@ -40,18 +40,30 @@
             reader.readAsDataURL(file);
         }
     </script>
+    <style>
+        .a{
+            width: 200px;
+            height: 200px;
+            background: #9eeeff;
+            margin: 100px auto;
+            padding: 50px 0 0 100px;
+        }
+    </style>
 </head>
 <body>
-<img id="preview" style="width: 100px;height: 100px"/>
-<form action="#" method="post">
-    <br />
-    <input type="file" name="file" accept="image/png,image/gif" id="imgFile" onchange="imgPreview(this)" />
-    <br/>
-    <input type="submit" value="上传">
-    <br />
-</form>
-
-<p id="showimg"></p>
+<div class="a">
+    <img id="preview" style="width: 100px;height: 100px"/>
+    <form action="#" method="post">
+        <br />
+        <input type="file" name="file" accept="image/png,image/gif" id="imgFile" onchange="imgPreview(this)" />
+        <br/>
+        <input type="submit" value="上传">
+        <br />
+    </form>
+    <p id="showimg"></p>
+</div>
 </body>
 <script type="text/javascript" src="../Public/js/jquery.min.js"></script>
+</div>
+
 </html>
