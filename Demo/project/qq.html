@@ -69,7 +69,7 @@
 
 </div>
 <div class="b">
-    <img src="../images/love.png" style="width:110px ;height: 80px" />
+    <img src="../images/others/love.png" style="width:110px ;height: 80px"/>
 
     <!-- HTML页面布局 -->
 
@@ -124,7 +124,7 @@
                     <tr>
                         <td align="right">出生日期:</td>
                         <td align="left">
-                            <input type="text" name="Date_of_birth" style="border-radius:9px;">
+                            <input type="date" name="Date_of_birth" style="border-radius:9px;" value="2018-12-11">
                         </td>
                         <td align="right" >
                             &nbsp;
@@ -178,10 +178,11 @@
                         <td align="left">
                             <input type="text" name="Document_type" style="border-radius:9px;">
                         </td>
-                        <td align="right"> 工作时间:</td>
+                        <td class="shijianduan" align="right"> 工作时间:</td>
                         <td align="left"  >
 
-                            <input type="text" name="ID_number" style="border-radius:9px;">
+                            <input type="month" value="2016-3" name="ID_number" style="border-radius:9px;">
+                            -<input type="month" value="2011-6" name="ID_number" style="border-radius:9px;">
                         </td>
                     </tr>
                     <tr>
@@ -221,15 +222,23 @@
                             <input type="text" name="Student_ID" style="border-radius:9px;">
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="shijianduan">
                         <td align="right"> 入学时间:</td>
                         <td align="left">
-                            <input type="text" name="Document_type" style="border-radius:9px;">
+                            <input type="month" value="2011-11" name="Document_type" style="border-radius:9px;">
+                            -<input type="month" value="2017-12" name="Document_type" style="border-radius:9px;">
                         </td>
                         <td align="right"> 学历:</td>
                         <td align="left"  >
-
-                            <input type="text" name="ID_number" style="border-radius:9px;">
+                            <select name="xueli" style="border-radius:9px; width: 350px;height:35px ">
+                                <option value="大专">初中</option>
+                                <option value="高中">高中</option>
+                                <option value="大专">高职</option>
+                                <option value="高中">大专</option>
+                                <option value="大专">本科</option>
+                                <option value="高中">研究生</option>
+                                <option value="大专">博士</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
@@ -260,6 +269,7 @@
 
 
         <div class="hide">
+            <<<<<<< Updated upstream:Demo/project/qq.html
             <img id="preview" style="width: 100px;height: 100px"/>
             <form action="#" method="post">
                 <br />
@@ -267,7 +277,17 @@
                 <br/>
                 <input type="submit" value="上传">
                 <br />
-            </form>
+                =======
+                <form action="##" method="post" name="Information_modification">
+                    <center style="margin: 82px 0 83px 0">
+                        <img src="../images/others/11.png"/>
+                        <br>
+                        <br>
+                        <input type="submit" value="在本地选择图片" name="Preservation" style="border-radius:9px;">
+                        <input type="submit" value="保存" name="Preservation" style="border-radius:9px;">
+                    </center>
+                    >>>>>>> Stashed changes:Demo/test/qq.html
+                </form>
             <p id="showimg"></p>
         </div>
         <div class = "hide">
