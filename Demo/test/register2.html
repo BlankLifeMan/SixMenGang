@@ -70,10 +70,6 @@
         }
     </style>
 
-
-
-
-
 </head>
 
 <body>
@@ -87,7 +83,7 @@
 
 
     <div class="show" id="b">
-        <form action="aa.asp" method="post" id="form1" onsubmit="return check();">
+        <form action="aa.asp" method="post" id="form1">
             <table width="0" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td>昵称：</td>
@@ -101,11 +97,11 @@
 
                 <tr>
                     <td>密码： </td>
-                    <td><input type="password" name="password" id="word" /></td>
+                    <td><input type="password" name="password"/></td>
                 </tr>
                 <tr>
                     <td>确认密码：</td>
-                    <td><input type="password" name="confirmpass" id="ensure"/></td>
+                    <td><input type="password" name="confirmpass"/></td>
                 </tr>
 
                 <tr>
@@ -117,35 +113,13 @@
             </table>
             <input type="reset" value="重置" style="width: 80px;text-align: center">
 
-            <input type="submit" value="提交" style="width: 80px;text-align: center" >
+            <input type="submit" value="提交" style="width: 80px;text-align: center">
 
         </form>
+
     </div>
 
-    <script type="text/javascript">
-        var m = document.getElementById("word").value;
-        var surem = document.getElementById("ensure").value;
-        // function sub() {
-        //         alert("两次输入密码不一致");
-        // }
-
-        function check(){
-            var password = document.getElementById("password").value;
-            var repsword = document.getElementById("repsword").value;
-            if(password === ''){
-                alert('密码不能为空');
-                return false;
-            }
-            if(password != repsword) {
-                alert("两次密码不同，请重新输入");
-                return false;
-            }
-
-        }
 
 
-    </script>
-</div>
 </body>
-
 </html>
