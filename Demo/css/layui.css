@@ -183,7 +183,7 @@ a cite {
 
 .layui-icon {
     font-family: layui-icon !important;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
@@ -3498,7 +3498,7 @@ body .layui-table-tips .layui-layer-content {
 }
 
 .layui-nav * {
-    font-size: 14px
+    font-size: 24px
 }
 
 .layui-nav .layui-nav-item {
