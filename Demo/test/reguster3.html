@@ -12,30 +12,36 @@
             margin: 0;
             padding: 0;
         }
-
     </style>
 
 </head>
 <body>
-<div class="layui-row" style="border: solid 1px red;height: 100%;width: 100%">
+<div class="layui-row" style="height:95%;width: 100%;background-color: #fffb9e">
+                <ul class="layui-nav" style="font-size: 50px;background-color:#ffb800 ">
+                    <li class="layui-nav-item" >
+                        <a href="##">首页<span class="layui-icon layui-icon-face-smile"></span></a>
+                    </li>
+                    <li class="layui-nav-item" >
+                        <a href="##">活动<span class="layui-icon layui-icon-face-smile"></span></a>
+                    </li>
+                    <li class="layui-nav-item" >
+                        <a href="##">约会<span class="layui-icon layui-icon-face-smile"></span></a>
+                    </li>
+                    <li class="layui-nav-item" >
+                        <a href="##">反馈<span class="layui-icon layui-icon-face-smile"></span></a>
+                    </li>
+                </ul>
+
 
     <div class="layui-col-lg4" style="height: 100%" ></div>
 
-
-<<<<<<< Updated upstream
     <div class="layui-col-lg5" style="height: 100%;width: 400px">
           <p align="center" style="margin-top: 40px;font-size: 25px" >注册</p>
         <form class="layui-form" action="#" style="margin-top: 30px;" lay-filter="example">
-=======
-    <div class="layui-col-lg5" style="height: 100%;">
-          <h1 align="center" style="margin-top: 40px;font-size: 25px" >注册</h1>
-
-        <form class="layui-form" action="" style="margin-top: 30px;" lay-filter="example">
->>>>>>> Stashed changes
             <div class="layui-form-item">
                 <label class="layui-form-label">呢称</label>
                 <div class="layui-input-block">
-                    <input type="text" name="username" required  lay-verify="username" placeholder="请输入名称" autocomplete="off" class="layui-input" style="width: 307px;">
+                    <input type="text" name="username" required  lay-verify="username" placeholder="请输入标题" autocomplete="off" class="layui-input" style="width: 307px;">
                 </div>
                 <div class="layui-form-mid layui-word-aux">
 
@@ -81,7 +87,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">邮箱</label>
                 <div class="layui-input-block">
-                    <input type="email" name="email" required  lay-verify="email" placeholder="请输入邮箱" autocomplete="off" class="layui-input" style="width: 307px">
+                    <input type="text" name="email" required  lay-verify="email" placeholder="请输入邮箱" autocomplete="off" class="layui-input" style="width: 307px">
                 </div>
                 <div class="layui-form-mid layui-word-aux">
 
@@ -103,6 +109,24 @@
 </div>
 
 </body>
+
+    <script type="text/javascript">
+    var d1=document.getElementById('di1');
+    var d2=document.getElementById('di2');
+    if (d1.className="div1"){
+        d2.style.display="none";
+    } else {
+        d2.style.display="block";
+    }
+    function disanfang() {
+        d1.style.display="none";
+        d2.style.display="block";
+    }
+    function shouji() {
+        d2.style.display="none";
+        d1.style.display="block";
+    }
+</script>
 <script>
     layui.use(['form', 'layedit'], function(){
         var form = layui.form;
@@ -130,7 +154,8 @@
               console.log(data.field.password)
               console.log(data.field.password1)
               if(data.field.password == data.field.password1){
-                  layer.alert("密码和账户正确")
+                  layer.alert("注册成功");
+                  window.open('http://www.imooc.com/code/1642','_blank','width=100%,height=100%');
               }else {
                   layer.msg('两次账号和密码不一样');
               }
