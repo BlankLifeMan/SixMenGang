@@ -183,7 +183,7 @@ a cite {
 
 .layui-icon {
     font-family: layui-icon !important;
-    font-size: 20px;
+    font-size: 26px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
@@ -819,7 +819,7 @@ a cite {
 
 .layui-body {
     position: absolute;
-    left: 200px;
+    left: 203px;
     right: 0;
     top: 0;
     bottom: 0;
