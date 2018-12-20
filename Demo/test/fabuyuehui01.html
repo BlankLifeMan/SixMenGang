@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/Yuehui.css" type="text/css">
+        <title >发布约会页面</title>
+    <style>
+        section.theme {
+            position: relative;
+            margin: 0 auto;
+            width: 96%;
+            color: #FFFFFF;
+        }
+
+        .theme td {
+            height: 35px;
+            width: 10px;
+            float: left;
+            line-height: 35px;
+            text-align: center;
+            margin: auto;
+            margin-left: 8px;
+        }
+
+        .theme img {
+            height: 32px;
+            width: 32px;
+            margin-top: 5px;
+        }
+
+        .a {
+            width: 60px;
+            text-align: center;
+            padding: 0 0 20px 0;
+            size: 20px;
+        }
+    </style>
+</head>
+<body class="d">
+    <div class="b">
+        <h3>发布约会</h3>
+    </div>
+<hr/>
+<form action="#" method="get">
+
+<center> <table style="background: #FFFFFF ; opacity:0.55; width: 80% ;height: 500px; position: center;"  class="a">
+    <section class="theme">
+        <br>
+        <tr height="35px" width="32px">
+            <td style="position: center" >约会安排</td>
+            <tr>
+        <td colspan="9">
+            <input type="checkbox" name="fav" id="sings" value="1"/>唱歌
+            <input type="checkbox" name="fav" id="dances" value="2"/>跳舞
+            <input type="checkbox" name="fav" id="paints" value="3"/>绘画
+            <input type="checkbox" name="fav" id="games" value="4"/>游戏
+            <input type="checkbox" name="fav" id="swims" value="5"/>游泳
+            <input type="checkbox" name="fav" id="xiaqis" value="6"/>下棋
+            <input type="checkbox" name="fav" id="guangjie" value="5"/>逛街
+            <input type="checkbox" name="fav" id="chifan" value="6"/>吃饭
+            <input type="checkbox" name="fav" id="zidingyi" value="6"/>自定义
+            <br>
+            <br>
+            <form>
+                详细描述：
+       <textarea  cols="28" rows="2">
+       </textarea>
+            </form>
+
+
+        </td>
+
+        </tr>
+    </section>
+
+
+    <tr height="35px">
+        <td>费用</td>
+    <tr>
+        <td colspan="9">
+            我买单<input type="radio" name="buy" id="man" value="1"/>
+            AA<input type="radio" name="buy" id="woman" value="0"/>
+            你买单<input type="radio" name="buy" id="center" value="0"/>
+        </td>
+    </tr>
+        <td>日期    时间</td>
+    </tr>
+        <td colspan="9">
+            <input type="date" name="time" placeholder="2018/12/10"></input>
+            <!--<input type="date" name="time" rows="1" cols="30" placeholder="2018/12/10"></input>-->
+        </td>
+    </tr>
+    <tr height="35px">
+        <td>地址</td>
+    </tr>
+        <td colspan="9">
+            <textarea name="address" rows="1" cols="30"></textarea>
+        </td>
+    </tr>
+    <tr height="35px">
+        <td>具体约会介绍</td>
+    </tr>
+        <td colspan="9">
+            <!--<p value="0">&#45;&#45;可输入0-30字的描述&#45;&#45;</p>-->
+            <textarea name="intro" rows="8" cols="75"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="9" align="center">
+            <input type="submit" id="zhuce" value="发布约会"/>
+        </td>
+    </tr>
+</table>
+</center>
+
+</form>
+</body>
+</html>

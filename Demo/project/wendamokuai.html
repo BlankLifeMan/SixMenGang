@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Demo3.css" type="text/css">
+    <title> 问答模块选项卡</title>
+
+    <script type="text/javascript">
+        // JS实现选项卡切换
+        window.onload = function () {
+            var myTab = document.getElementById("tab");    //整个div
+            var myUl = myTab.getElementsByTagName("ul")[0];//一个节点
+            var myLi = myUl.getElementsByTagName("li");    //数组
+            var myDiv = myTab.getElementsByTagName("div"); //数组
+
+            for (var i = 0; i < myLi.length; i++) {
+                myLi[i].index = i;
+                myLi[i].onclick = function () {
+                    for (var j = 0; j < myLi.length; j++) {
+                        myLi[j].className = "off";
+                        myDiv[j].className = "hide";
+                    }
+                    this.className = "on";
+                    myDiv[this.index].className = "show";
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function imgPreview(fileDom) {
+            //判断是否支持FileReader
+            if (window.FileReader) {
+                var reader = new FileReader();
+            } else {
+                alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
+            }
+
+            //获取文件
+            var file = fileDom.files[0];
+            var imageType = /^image\//;
+            //是否是图片
+            if (!imageType.test(file.type)) {
+                alert("请选择图片！");
+                return;
+            }
+            //读取完成
+            reader.onload = function (e) {
+                //获取图片dom
+                var img = document.getElementById("preview");
+                //图片路径设置为读取的图片
+                img.src = e.target.result;
+
+                // ajax 上传图片
+                $.post("upload_h5.php", {img: e.target.result}, function (ret) {
+                    if (ret.img != '') {
+                        alert('upload success');
+                        $('#showimg').html('<img src="' + ret.img + '">');
+                    } else {
+                        alert('upload fail');
+                    }
+                }, 'json');
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+    <style>
+        .layui-btn {
+            align-self: left;
+        }
+    </style>
+</head>
+<body class="e">
+<div class="e">
+    <div class="g">
+
+    </div>
+    <div class="b">
+        <img src="../images/others/wenda2%20.png" style="width:110px ;height: 80px"/>
+
+        <!-- HTML页面布局 -->
+
+        <div id="tab">
+            <ul>
+                <a href="a:link">
+                    <a href="##">
+                        <li class="on" style="border-radius:9px;">首页</li>
+                    </a>
+                    <a href="##">
+                        <li class="off" style="border-radius:9px;">Php</li>
+                    </a>
+                    <a href="##">
+                        <li class="off" style="border-radius:9px;">Javascript</li>
+                    </a>
+                    <a href="##">
+                        <li class="off" style="border-radius:9px;">Python</li>
+                    </a>
+                    <a href="##">
+                        <li class="off" style="border-radius:9px;">Java</li>
+                    </a>
+                </a>
+            </ul>
+
+
+        </div>
+
+        <div class="layui-col-lg6" style="height: auto;">
+            <div style="padding-left: 70px;font-family:宋体;font-size:40px;" align="left">
+
+                <button class="layui-btn" style="background-color: #fff8f9;
+             height: 56px" onclick="fa()" oncontextmenu="this">最新回答
+                    <a target="_blank" href="fabuyuehui.html" style="font-family: 宋体;padding-left: 40px"></a>
+                    <i class="layui-icon">&#xe608;</i>
+                    <button class="layui-btn" style="background-color: #fff8f9;height: 56px" onclick="fa()">最新回答
+                        <a target="_blank" href="fabuyuehui.html" style="font-family: 宋体;padding-left: 40px"></a>
+                        <i class="layui-icon">&#xe608;</i>
+                        <button class="layui-btn" style="background-color: #fff8f9;height: 56px" onclick="fa()">等待回答
+                            <a target="_blank" href="fabuyuehui.html" style="font-family: 宋体;padding-left: 40px"></a>
+                            <i class="layui-icon">&#xe608;</i>
+                        </button>
+                    </button>
+                </button>
+            </div>
+        </div>
+        <div class="layui-col-lg8" style="height: 113%;width:97%;background-color:#9afbff">
+            <hr>
+            <div style="padding-left: 40px;padding-top: 30px">
+                <div class="WB_info">
+                    <a href="">熊大</a><a target="_blank" href="##"><img
+                        src="https://h5.sinaimg.cn/upload/1059/495/2018/11/06/pcpanda2x.png" alt=""
+                        class="W_icon_yystyle"></a></div>
+                <div class="WB_from S_txt2">
+                    <a target="_blank" href="">最新消息今天 08:43</a>
+
+                </div>
+                <div class="PCD_user_b S_bg1" node-type="follow_recommend_box" style="display:none"></div>
+                <div class="WB_text W_f14" node-type="feed_list_content">
+                    问题： 有关PHP初级进阶的问题？​​​​
+                    <button class="layui-btn" style="background-color: #ffde85;width: auto;">
+                        <a target="_blank" href="##" style="font-family: 宋体;padding-right: 20px;"
+                           onclick="xiang()">回答问题</a>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="WB_detail" style="padding-left: 40px;padding-top: 30px">
+                <div class="WB_info">
+                    <a href="">熊二</a><a target="_blank" href="##"><img
+                        src="https://h5.sinaimg.cn/upload/1059/495/2018/11/06/pcpanda2x.png" alt=""
+                        class="W_icon_yystyle"></a></div>
+                <div class="WB_from S_txt2">
+                    <a target="_blank" href="/6192247898/H7LeIEH99?ref=home&amp;rid=4_0_8_793504382064437946_0_0"
+                       title="2018-12-18 08:43" date="1545093803000" class="S_txt2" node-type="feed_list_item_date"
+                       suda-data="key=tblog_home_new&amp;value=feed_time:4318498769698979:frommainfeed">今天 08:43</a>
+                    <!-- minzheng add part 2 -->
+                </div>
+                <div class="PCD_user_b S_bg1" node-type="follow_recommend_box" style="display:none"></div>
+                <div class="WB_text W_f14" node-type="feed_list_content">
+                    问题： 有关PHP初级进阶的问题？​​​​ ​​​​
+                    <button class="layui-btn" style="background-color: #ffde85;width: auto;margin-right: 200px"
+                            onclick="xiang()">
+                        <a target="_blank" href="##" style="font-family: 宋体;padding-right: 20px">回答问题</a>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="WB_detail" style="padding-left: 40px;padding-top: 30px">
+                <div class="WB_info">
+                    <a href="">光头强</a><a target="_blank" href="##"><img
+                        src="https://h5.sinaimg.cn/upload/1059/495/2018/11/06/pcpanda2x.png" alt=""
+                        class="W_icon_yystyle"></a></div>
+                <div class="WB_from S_txt2">
+                    <a target="_blank" href="/6192247898/H7LeIEH99?ref=home&amp;rid=4_0_8_793504382064437946_0_0"
+                       title="2018-12-18 08:43" date="1545093803000" class="S_txt2" node-type="feed_list_item_date"
+                       suda-data="key=tblog_home_new&amp;value=feed_time:4318498769698979:frommainfeed">今天 08:43</a>
+                    <!-- minzheng add part 2 -->
+                </div>
+                <div class="PCD_user_b S_bg1" node-type="follow_recommend_box" style="display:none"></div>
+                <div class="WB_text W_f14" node-type="feed_list_content">
+                    问题： 有关PHP初级进阶的问题？​​​​
+                    <button class="layui-btn" style="background-color: #ffde85;width: auto;margin-right: 200px"
+                            onclick="xiang()">
+                        <a target="_blank" href="##" style="font-family: 宋体;padding-right: 20px">回答问题</a>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="WB_detail" style="padding-left: 40px;padding-top: 30px">
+                <div class="WB_info">
+                    <a href="">跳跳</a><a target="_blank" href="##"><img
+                        src="https://h5.sinaimg.cn/upload/1059/495/2018/11/06/pcpanda2x.png" alt=""
+                        class="W_icon_yystyle"></a></div>
+                <div class="WB_from S_txt2">
+                    <a target="_blank" href="/6192247898/H7LeIEH99?ref=home&amp;rid=4_0_8_793504382064437946_0_0"
+                       title="2018-12-18 08:43" date="1545093803000" class="S_txt2" node-type="feed_list_item_date"
+                       suda-data="key=tblog_home_new&amp;value=feed_time:4318498769698979:frommainfeed">今天 08:43</a>
+                    <!-- minzheng add part 2 -->
+                </div>
+                <div class="PCD_user_b S_bg1" node-type="follow_recommend_box" style="display:none"></div>
+                <div class="WB_text W_f14" node-type="feed_list_content">
+                    问题： 有关PHP初级进阶的问题？​​​​ ​​​​
+                    <button class="layui-btn" style="background-color: #ffde85;width: auto;" onclick="xiang()">
+                        <a target="_blank" href="##" style="font-family: 宋体;padding-right: 20px">回答问题</a>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="WB_detail" style="padding-left: 40px;padding-top: 30px">
+                <div class="WB_info">
+                    <a href="">皮皮</a><a target="_blank" href="##"><img
+                        src="https://h5.sinaimg.cn/upload/1059/495/2018/11/06/pcpanda2x.png"></a></div>
+                <div class="WB_from S_txt2">
+                    <a target="_blank" href="" title="2018-12-18 08:43" date="1545093803000" class="S_txt2"
+                       node-type="feed_list_item_date"
+                       suda-data="key=tblog_home_new&amp;value=feed_time:4318498769698979:frommainfeed">今天 08:43</a>
+                    <!-- minzheng add part 2 -->
+                </div>
+                <div style="display:none"></div>
+                <div>
+                    问题： 有关PHP初级进阶的问题？​​​​ ​​​​
+                    <button class="layui-btn" style="background-color: #ffde85;width: auto;margin-right: 200px"
+                            onclick="xiang()">
+                        <a target="_blank" href="##" style="font-family: 宋体;padding-right: 20px">回答问题</a>
+                    </button>
+                </div>
+            </div>
+            <div id="page" style="padding-top: 70px;padding-left: 100px"></div>
+        </div>
+    </div>
+</div>
+

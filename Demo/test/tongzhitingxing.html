@@ -3,14 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>通知提醒</title>
+    <style>
+        .tr1-1 {
+            background-color: #f3d7ff;
+            width: 960px;
+            height: 140px;
+        }
+
+        .tr1-2 {
+            background-color: #f3d7ff;
+            width: 960px;
+            height: 140px;
+        }
+
+        .tr1-3 {
+            background-color: #f3d7ff;
+            width: 960px;
+            height: 140px;
+        }
+
+        .tr2 {
+            background-color: #c0fbff;
+            width: 960px;
+            height: 35px;
+        }
+
+        .tr1 {
+            background-color: #c0fbff;
+            width: 960px;
+            height: 35px;
+            text-align: left;
+        }
+
+        .it1 {
+            background-color: #aaf7f6;
+            width: 960px;
+            height: 35px;
+        }
+    </style>
 </head>
 <body>
 <form>
     <table>
-        <tr>消息提醒</tr>
+        <tr class="tr1">消息提醒</tr>
         <br>
-        <input type="text" value="全部标记为已读"></input>
-        <td>
+        <tr>
+            <input class="it1" type="text" value="全部标记为已读">
+
+        </tr>
+        <tr class="tr1-1">
+            <td headers="35px" width="960px">
             <details open="open">
                 <summary>今天</summary>
                 <p>信息1</p>
@@ -18,8 +60,8 @@
                 <p>信息n</p>
             </details>
         </td>
-
-        <tr>
+        </tr>
+        <tr class="tr1-2">
             <td>
                 <details open="open">
                     <summary>昨天</summary>
@@ -29,7 +71,8 @@
                 </details>
             </td>
         </tr>
-        <tr>
+        <br>
+        <tr class="tr1-3">
             <td>
                 <details open="open">
                     <summary>日期</summary>
@@ -39,7 +82,8 @@
                 </details>
             </td>
         </tr>
-        <tr>
+        <br>
+        <tr class="tr2" align="center">
             <td>
                 <input type="button" name="disagree" value="忽略">
                 <input type="button" name="agree" value="同意">
